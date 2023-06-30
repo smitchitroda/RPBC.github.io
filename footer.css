@@ -1,0 +1,236 @@
+/* footer css start */
+.footer{
+    background: rgba(255, 218, 185, 0.678);
+    display: flex;
+    padding: 1%;
+    flex-direction: column;
+}
+
+.footer .boxes{    
+    position: relative;
+    display: flex;
+    /* background: white; */
+    margin: 0%;
+    display: flex;
+    justify-content: space-around;
+    align-items: cetner;
+}
+
+.footer .boxes .box{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    margin: 0 1%;
+    border-radius: 20px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, .8);    
+    border-top: 2px solid rgba(255, 255, 255, .5);
+    border-left: 2px solid rgba(255, 255, 255, .5);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+}
+
+.footer .boxes .box h1{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.footer .boxes .box p{
+    margin-top: 5%;
+    text-align: justify;
+}
+
+.footer .boxes .box3 .social-icon{
+    position: relative;
+    /* background: gray; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.footer .boxes .box3 .social-icon h3{
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.footer .boxes .box3 .social-icon ul{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+
+.footer .boxes .box3 .social-icon ul li{
+    list-style-type: none;
+}
+
+.footer .boxes .box3 .social-icon ul li a{
+    text-decoration: none;
+    transition: .2s ease-in-out;
+}
+
+.footer .boxes .box3 .social-icon ul li img{
+    height: 60%;
+    width: 75%;
+    transition: .2s ease-in-out;
+}
+
+.footer .boxes .box3 .social-icon ul li a:hover img{
+    height: 55%;
+    width: 70%;
+}
+
+.footer .boxes .box4 ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.footer .boxes .box4 ul li{
+    list-style-type: none;
+    margin: 10% 0;
+}
+
+.footer .boxes .box4 ul li a{
+    color:rgba(0, 0, 0, .7);
+    font-size: 1rem;
+    letter-spacing: 1px ;
+    text-decoration: none;
+    transition: .2s ease-in;
+}
+
+.footer .boxes .box4 ul li a:hover{
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.2rem;
+    color:rgba(0, 0, 0, .9);
+}
+
+.footer .copyright{
+    /* background: gray; */
+    width: 95vw;
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 1% 0 1%;
+}
+
+/* responsive code start */
+@media screen and (max-width: 1102px){
+    footer .boxes .box p{
+        font-size: .8rem;
+    }
+
+    .footer .boxes .box h1{
+        font-size: 1.5rem;
+    }
+
+    .footer .boxes .box3 .social-icon h3, .footer .copyright h3, .footer .copyright h4{
+        font-size: 1rem;
+    }
+
+    .footer .boxes .box4 ul li a{
+        font-size: .9rem;
+    }
+
+    .footer .boxes .box4 ul li a:hover{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .footer{
+        flex-direction: column;
+    }
+
+    .footer .boxes{
+        flex-direction: column;
+        padding: 1%;
+    }
+
+    .footer .boxes .box{
+        padding: 0;
+        margin: 3% 0;
+    }
+
+    .footer .boxes .box{
+        width: 50vw;
+        margin: 3% auto;
+    }
+    
+    .footer .boxes .box{
+        width: 80vw;
+    }
+
+    .footer .boxes .box h1{
+        margin-top: 2%;
+    }
+
+    .footer .boxes .box p{
+        margin-top: 2%;
+    }
+
+    .footer .boxes .box3 .social-icon, .footer .boxes .box4 ul{
+        margin-top: 0;
+        margin-bottom: 2%;
+        /* background: gray; */
+    }
+    
+    .footer .boxes .box3 .social-icon ul li a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer .boxes .box3 .social-icon ul li a img{
+        height: 30%;
+        width: 25%;
+    }
+
+    .footer .copyright{
+        /* background: gray; */
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .footer{
+        flex-direction: column;
+    }
+
+    .footer .boxes{
+        flex-direction: column;
+        padding: 1%;
+    }
+
+    .footer .boxes .box{
+        width: 80vw;
+    }
+
+    /* .footer .boxes .box3 .social-icon ul{
+        background: gray;
+    } */
+    
+    .footer .boxes .box3 .social-icon ul li a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer .boxes .box3 .social-icon ul li a img{
+        height: 25%;
+        width: 25%;
+    }
+
+    .footer .copyright{
+        /* background: gray; */
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+/* responsive code over */
